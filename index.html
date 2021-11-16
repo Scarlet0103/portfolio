@@ -2,149 +2,629 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Scarlet Portfolio</title>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Pranay</title>
+    <meta name="Portfolio" content="">
+    <meta name="Pranay" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
-<body>
-        <div id="slideout-menu">
-            <ul>
-                <li>
-                    <a style="font-family: CloneRoundedLatn-Sb☞-Regular;" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="blogslist.html">Blog</a>
-                </li>
-                <li>
-                    <a href="blogslist.html">Projects</a>
-                </li>
-                <ul style="max-width: 100%; margin-right: auto;margin-left: auto;">
-                    <li>
-                        <a href="https://www.linkedin.com/in/pranay-kumar-2250b6170/" target="_blank">
-                            <img src="img/linkedin.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://dribbble.com/scarlet0103" target="_blank">
-                            <img src="img/dribble.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/pranay0103/" target="_blank">
-                            <img src="img/instagram.svg"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a  href="https://github.com/Scarlet0103" target="_blank">
-                            <img src="img/github.svg"/>
-                        </a>
-                    </li>
-                </ul>
-            </ul>
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
         </div>
-    
-        <nav>
-            <div>
-                <ul>
-                    <li>
-                        <a class="active" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="blogslist.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="blogslist.html">Projects</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="menu-icon">
-                <img src="img/nav-icon.svg"/>
-            </div>
-            <ul id="search-icon">
-                <li>
-                    <a href="https://www.linkedin.com/in/pranay-kumar-2250b6170/" target="_blank">
-                        <img style="margin-right: 6px; margin-left: 6px;" src="img/linkedin.svg"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://dribbble.com/scarlet0103" target="_blank">
-                        <img style="margin-right: 6px; margin-left: 6px;" src="img/dribble.svg"/>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/pranay0103/" target="_blank">
-                        <img style="margin-right: 6px; margin-left: 6px;" src="img/instagram.svg"/>
-                    </a>
-                </li>
-                <li>
-                    <a  href="https://github.com/Scarlet0103" target="_blank">
-                        <img style="margin-right: 6px; margin-left: 6px;" src="img/github.svg"/>
-                    </a>
-                </li>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
+                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Say Hello</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="https://dribbble.com/scarlet0103" target="_blank"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/Scarlet0103" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/pranay-kumar-2250b6170/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.behance.net/scarleterza1" target="_blank"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hello, I'm Pranay</h3>
+                <h1>
+                    Software Developer <br>
+                    and UX Designer <br>
+                    Based In India.
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div> <!-- end row -->
+
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        "Design and Programming are human activities; forget that and all is lost"
+                    </p>
+
+                    <p>
+                        I'm Pranay Kumar, an undergraduate IT student at IIITm, 
+                        a multi-disciplinary developer and creative from India. 
+                        I am currently working as an SDE intern at Amazon, creating 
+                        and designing software applications since 2017.
+                    </p>
+
+                    <p>
+                    </p>
+
+                    <p>
+                        I'm proficient in mobile and web application development, Illustrations, and 
+                        software development. I gathered my first experiences as an intern by working 
+                        as a Full-Stack developer at BFIL. My passion for semantics, development, and 
+                        SDLC landed me as an intern at Rakuten, and later, thanks to my college 
+                        placement cell, I got to work with Amazon. I enjoy a good cup of coffee, 
+                        watching movies and tv shows, playing video games, or ping pong.
+                    </p>
+
+                    <p class="lead">
+                        "Designers are meant to be loved, not to be understood"
+                    </p>
+                </div>
+            </div>
     
-    <div id="banner">
-        <h1>(Pranay kumar)</h1>
-        <h3>Designers are meant to be loved,<br /> not to be understood.</h3>
-        <h4>Scroll down to see my work</h4>
-    </div>
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="mailto:chpranaykumar@gmail.com" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="./Resume - Pranay Kumar.pdf" target="_blank"   class="btn btn--primary full-width">Download CV</a>
+                </div>
+            </div>
 
-    <div class="cards">
-        <div data-aos="fade-up" class="card animate-enter">
-            <div class="property-image">
-                <img src="img/web/1.png">
-                <p>Cooking Bot</p>
-                <h5>#Design #UI</h5>
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">January 2022 - June 2022</p>
+                                <h3 class="item-title">Amazon India</h3>
+                                <h5>SDE Intern</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    I'm currently an SDE intern at Amazon India. Thanks to my 
+                                    placement cell, I have landed this excellent opportunity. 
+                                    I'm excited to work and gain a lot of experience from this intern.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">April 2021 - August 2021</p>
+                                <h3 class="item-title">Rakuten India</h3>
+                                <h5>Technical Intern</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    I have interned at Rakuten India, where I got to work with two 
+                                    different teams, the first one as a QA Automator and the latter 
+                                    as a web developer. I learned about other technologies and 
+                                    gained a lot of experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">May 2019 - July 2019</p>
+                                <h3 class="item-title">BFIL India</h3>
+                                <h5>Full-Stack Developer Intern</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    I worked as a full-stack developer at BFIL, which was also my first 
+                                    intern where I did a Project on TDS (Tax Deduct at Source), for which 
+                                    I used the ASP.NET framework and Microsoft sequel server as my database.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2017 - July 2022</p>
+                                <h3 class="item-title">ABV-IIITM</h3>
+                                <h5>Master Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    I'm currently a final year student at ABV-IIITm. 
+                                    I have opted for the Dual Degree program, an integrated course 
+                                    of masters and bachelors with a course duration of five years 
+                                    majored in Information Technology.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2017 - July 2022</p>
+                                <h3 class="item-title">ABV-IIITM</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    I'm currently a final year student at ABV-IIITm. 
+                                    I have opted for the Dual Degree program, an integrated course 
+                                    of masters and bachelors with a course duration of five years 
+                                    majored in Information Technology.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">June 2015 - May 2017</p>
+                                <h3 class="item-title">SRM Junior College</h3>
+                                <h5>Intermediate</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    I have done my high school at SRM Junior College, 
+                                    where I opted for MPC (Maths Physics and Chemistry) as 
+                                    my major subjects.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
+
+                <p class="section-desc">
+                    My passion and goal is to create and design software based applications.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Android Development</h4>
+                    <p>
+                        I work with native android development in both java and kotlin. 
+                        I developed many applications, contributed to some open-source organizations, 
+                        and have done many internships as an android developer.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Version Control</h4>
+                    <p>
+                        As a developer, I'm good at using version control, mainly git, 
+                        and in my free time, I solve issues for open-source organizations on Github.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Web Development</h4>
+                    <p>
+                        I'm good at all web-related components like HTML, CSS, and JS as a web developer. 
+                        I also have good experience with react - as I have worked on it during 
+                        my intern at Rakuten.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">SDLC</h4>
+                    <p>
+                        I'm an experienced student in the software development life cycle 
+                        as it is one of the significant components to learn for any software developer. 
+                        I have good experience with agile development processes and also waterfall models.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                        I'm a self-learned UI/UX developer. I have posted some of my application designs 
+                        in Behance and dribble. Some of my works are displayed below.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">DBMS</h4>
+                    <p>
+                        I have good experience with relational databases and also Microsoft sequel servers. 
+                        I'm also experienced with NoSQL like MongoDB and firebase. I used the Microsoft 
+                        sequel server during my first internship.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
+                <p class="section-desc">
+                    Here are some of my selected works I have done lately. Feel free to 
+                    check them out.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-remember.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <img src="images/portfolio/remember.jpg" 
+                                     srcset="images/portfolio/remember.jpg 1x, images/portfolio/remember@2x.jpg 2x" alt="">
+                            </a>    
+                            <a href="https://github.com/Scarlet0103/Remember" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+    
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Remember
+                            </h4>
+                            <p class="item-folio__cat">
+                                Android Application
+                            </p>
+                        </div>
+    
+                        <div class="item-folio__caption">
+                            <p>
+                                A note-taking application based on native android developed with material design
+                                and MVVM Architecture.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-cookingbot.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                <img src="images/portfolio/cookingbot.jpg" 
+                                     srcset="images/portfolio/cookingbot.jpg 1x, images/portfolio/cookingbot@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://dribbble.com/shots/13948781-Interactive-Cooking-App" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Cooking-BOT
+                            </h4>
+                            <p class="item-folio__cat">
+                                Application Design
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-socialdistancing.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="images/portfolio/socialdistancing.jpg"
+                                     srcset="images/portfolio/socialdistancing.jpg 1x, images/portfolio/socialdistancing@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://github.com/Scarlet0103/socialdistancing" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                The Social Distancing
+                            </h4>
+                            <p class="item-folio__cat">
+                                Android Application - BTP
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>
+                                A native android application that provides real-time alerts whenever 
+                                a person with covid comes in contact with the user-submitted as a 
+                                BTech project.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-notify.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="images/portfolio/notify.jpg" 
+                                     srcset="images/portfolio/notify.jpg 1x, images/portfolio/notify@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://dribbble.com/shots/16261467-Remember-Notes-App" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Notify
+                            </h4>
+                            <p class="item-folio__cat">
+                                Application Design
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-spanishbolo.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                <img src="images/portfolio/spanishbolo.jpg" 
+                                     srcset="images/portfolio/spanishbolo.jpg 1x, images/portfolio/spanishbolo@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://github.com/spanishb" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                SpanishBOLO
+                            </h4>
+                            <p class="item-folio__cat">
+                                Android Application
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>
+                                An E-Learning application based on native android for learning the Spanish 
+                                language with fun and creative exercises.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Get In Touch</h2>
             </div>
         </div>
-        <div data-aos="fade-up" class="card animate-enter">
-            <div class="property-image">
-                <img src="img/web/2.png">
-                <p>Remember</p>
-                <h5>#Android #App #UI</h5>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <!-- <p class="contact-email">
+                    <a href="mailto:chpranaykumar@gmail.com">hello@gmail.com</a>
+                </p> -->
+
+                <p class="section-desc">
+                I'm happy to connect, listen and help. Let's work together and build
+                something awesome. Let's turn your idea to an even greater product.
+                <a href="mailto:chpranaykumar@gmail.com">Email Me</a>.
+                </p>
             </div>
         </div>
-        <div data-aos="fade-up" class="card animate-enter">
-            <div class="property-image">
-                <img src="img/web/3.png">
-                <p>Spanish Learning</p>
-                <h5>#Android #Intern #UI</h5>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+            <div class="column large-5 medium-full contact-phone">
+                <h4>Call Me</h4>
+                <a href="tel:+919963628847">+919963628847</a>
             </div>
-        </div>
-        <div data-aos="fade-up" class="card animate-enter">
-            <div class="property-image">
-                <img src="img/web/4.png">
-                <p>Social Distancing</p>
-                <h5>#Android #BTP #UI</h5>
+
+            <div class="column large-7 medium-full contact-social">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/pranay-kumar-2250b6170/" title="linkedin">linkedin</a></li>
+                    <li><a href="https://www.instagram.com/pranay0103/" title="Instagram">Instagram</a></li>
+                </ul>
             </div>
-        </div>
-        <div data-aos="fade-up" class="card animate-enter">
-            <div class="property-image">
-                <img src="img/web/5.png">
-                <p>Time Capsule</p>
-                <h5>#UX&UI #Design</h5>
-            </div>
-        </div>
-        <div data-aos="fade-up" class="card animate-enter">
-            <div class="property-image">
-                <img src="img/web/6.png">
-                <p>Student Forum</p>
-                <h5>#Web #Project #UI</h5>
-            </div>
-        </div>
-    </div>
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
     <footer>
-        <p>Designed & Developed By Scarlet</p>
-    </footer>
-    <script src="main.js"></script>
-</body>
+        <div class="row">
+            <div class="column large-full ss-copyright"> 
+                <span>Developed By Scarlet</span>
+            </div>            
 
-</html>
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
